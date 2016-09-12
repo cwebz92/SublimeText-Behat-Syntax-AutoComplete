@@ -92,5 +92,8 @@
 		{ "trigger": "i_see_the_admin_bar",
 			"contents": "I see the admin bar" },
 
+		{ "trigger": "z_thisis_test",
+			"contents": "just a test" },
+
    ]
 }
