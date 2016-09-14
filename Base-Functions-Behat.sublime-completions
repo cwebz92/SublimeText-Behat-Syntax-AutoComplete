@@ -42,6 +42,9 @@
       	{ "trigger": "i_click_the_button_under",
       		"contents": "I click the \"${1:[label of button]}\" button under \"${2:[heading section]}\"" },
 
+      	{ "trigger": "i_click_the_button_inside_element_where_class_equals",
+      		"contents": "I click the \"${1:[label of button]}\" button inside \"${2:[element]}\" where class equals \"${3:[class value]}\"" },
+
 		{ "trigger": "i_submit_the_button",
 			"contents": "I submit the \"${1:[label of button]}\" button" },
 
@@ -91,9 +94,6 @@
 
 		{ "trigger": "i_see_the_admin_bar",
 			"contents": "I see the admin bar" },
-
-		{ "trigger": "q_thisis_test",
-			"contents": "just a test" },
 
    ]
 }
