@@ -28,10 +28,10 @@
       		"contents": "I see a \"${1:[element]}\" with \"${2:[attribute in element]}\" equal to \"${3:[attribute value]}\"" },
 
       	{ "trigger": "i_see_a_element_with_attribute_containing_value_with_expected_text",
-      		"contents": "I see a \"${1:[element]}\" with \"${2:[attribute in element]}\" containing \"${3:[attribute value]}\" with \"${4:[expected text between tag]}\"" },
+      		"contents": "I see a \"${1:[element]}\" with \"${2:[attribute in element]}\" containing \"${3:[attribute value]}\" with text \"${4:[expected text between tag]}\"" },
 
       	{ "trigger": "i_see_a_element_with_attribute_equal_to_value_with_expected_text",
-      		"contents": "I see a \"${1:[element]}\" with \"${2:[attribute in element]}\" equal to \"${3:[attribute value]}\" with \"${4:[expected text between tag]}\"" },
+      		"contents": "I see a \"${1:[element]}\" with \"${2:[attribute in element]}\" equal to \"${3:[attribute value]}\" with text \"${4:[expected text between tag]}\"" },
 
       	{ "trigger": "i_enter_a_email_address_into_the_field_with_id",
       		"contents": "I enter a \"${1:[domain of email]}\" email address into the field with id \"${2:[id of field]}\"" },
@@ -77,6 +77,7 @@
 
 		{ "trigger": "i_go_back",
 			"contents": "I go back" },
+
 		/* Currently not working
 		{ "trigger": "i_check_email_for_address_for_a_message_with_subject",//ummmm does this have to be @stexy? important to know
 			"contents": "I check email for \"${1:[email address to check]}\" for  a message with subject \"${2:[subject]}\"" },
