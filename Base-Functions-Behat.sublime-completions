@@ -12,87 +12,114 @@
    		{ "trigger": "and", "contents": "And  " },
 
    		//Given:
+   		//I am viewing :domain
    		{ "trigger": "i_amv_iewing", "contents": "I am viewing \"${1:[url]}\"" },
 
    		//Then:
+   		//Then I see the page with title :arg1
 		{ "trigger": "i_see_the_page_with_title",
 			"contents": "I see the page with title \"${1:[page title]}\"" },
 
+		//Then I see a(n) :element with text :text
       	{ "trigger": "i_see_a_element_with_text",
       		"contents": "I see a \"${1:[element]}\" with text \"${2:[text in element]}\"" },
 
+      	//Then I see a(n) :element with :attribute containing :string
       	{ "trigger": "i_see_a_element_with_attribute_containing",
       		"contents": "I see a \"${1:[element]}\" with \"${2:[attribute in element]}\" containing \"${3:[attribute value]}\"" },
 
+      	//Then I see a(n) :element with :attribute equal to :string
       	{ "trigger": "i_see_a_element_with_attribute_equal_to",
       		"contents": "I see a \"${1:[element]}\" with \"${2:[attribute in element]}\" equal to \"${3:[attribute value]}\"" },
 
+      	//Then I see a(n) :element with :attribute containing :string with text :expectedText
       	{ "trigger": "i_see_a_element_with_attribute_containing_value_with_expected_text",
       		"contents": "I see a \"${1:[element]}\" with \"${2:[attribute in element]}\" containing \"${3:[attribute value]}\" with text \"${4:[expected text between tag]}\"" },
 
+      	//Then I see a(n) :element with :attribute equal to :attrVal with text :expectedText
       	{ "trigger": "i_see_a_element_with_attribute_equal_to_value_with_expected_text",
       		"contents": "I see a \"${1:[element]}\" with \"${2:[attribute in element]}\" equal to \"${3:[attribute value]}\" with text \"${4:[expected text between tag]}\"" },
 
+      	//Then I enter a(n) :domain email address into the field with id :id
       	{ "trigger": "i_enter_a_email_address_into_the_field_with_id",
       		"contents": "I enter a \"${1:[domain of email]}\" email address into the field with id \"${2:[id of field]}\"" },
 
+      	//Then I click the :btnLabel button
 		{ "trigger": "i_click_the_button",
 			"contents": "I click the \"${1:[label of button]}\" button" },
 
+		//Then I click the :btnLabel button under :sectionHeading
       	{ "trigger": "i_click_the_button_under",
       		"contents": "I click the \"${1:[label of button]}\" button under \"${2:[heading section]}\"" },
-
+      	
+      	//Then I click the :btnValue button inside :element where class equals :elementClass
       	{ "trigger": "i_click_the_button_inside_element_where_class_equals",
       		"contents": "I click the \"${1:[label of button]}\" button inside \"${2:[element]}\" where class equals \"${3:[class value]}\"" },
 
+      	//Then I submit the :btnLabel button
 		{ "trigger": "i_submit_the_button",
 			"contents": "I submit the \"${1:[label of button]}\" button" },
 
+		//Then I click the :linkText link
 		{ "trigger": "i_click_the_link",
 			"contents": "I click the \"${1:[text of link]}\" link" },
 
+		//Then I click the :linkText link in :containerID
 		{ "trigger": "i_clcik_the_link_in",
 			"contents": "I click the \"${1:[text of link]}\" link in \"${2:[container id of tag]}\"" },
 
+		//Then I click the link after the :element with text :elementText
 		{ "trigger": "i_click_the_link_after_the_element_with_text",
 			"contents": "I click the link after the \"${1:[element]}\" with text \"${2:[text in element]}\"" },
 
+		//Then I see the text :textContent
 		{ "trigger": "i_see_the_text",
 			"contents": "I see the text \"${1:[text in page source]}\"" },
 
+		//Then I check the :element with id :checkboxId
 		{ "trigger": "i_check_the_box",
 			"contents": "I check the \"${1:[element]}\" with id \"${2:[id of the checkbox]}\"" },
 
+		//Then I uncheck the :element with id :checkboxId
 		{ "trigger": "i_uncheck_the_box",
 			"contents": "I uncheck the \"${1:[element]}\" with id \"${2:[id of the checkbox]}\"" },
 
+		//Then I select :selValue in the field with id :fieldId
 		{ "trigger": "i_select_value_in_the_field_with_id",
 			"contents": "I select \"${1:[value to select]}\" in the field with id \"${2:[id of field]}\"" },
 		
+		//Then I wait :time
 		{ "trigger": "i_wait",
 			"contents": "I wait \"${1:[time: # seconds/minutes]}\"" },
 
+		//Then I see all inputs in the form with :attribute equal to :string are enabled
 		{ "trigger": "i_see_all_the_inputs_in_the_form_are_enabled",
 			"contents": "I see all the inputs in the form with \"${1:[attribute in form field]}\" equal to \"${2:[atrribute value]}\" are enabled" },
 
+		//Then I go back
 		{ "trigger": "i_go_back",
 			"contents": "I go back" },
 
 		/* Currently not working
+		//Then I check email for :address for a message with subject :subject
 		{ "trigger": "i_check_email_for_address_for_a_message_with_subject",//ummmm does this have to be @stexy? important to know
 			"contents": "I check email for \"${1:[email address to check]}\" for  a message with subject \"${2:[subject]}\"" },
-
+		
+		//Then I click the :linkText link in an email for :address with subject :subject
 		{ "trigger": "i_click_the_link_in_an_email_for_address_with_subject",//ummmm does this have to be @stexy? important to know
 			"contents": "I click the \"${1:[text of link]}\" link in an email for \"${2:[email address to check]}\" with subject \"${3:[subject]}\"" },
 		*/
 
 		//When:
+		//When I enter :value into the field with id :id
 		{ "trigger": "i_enter_value_into_the_field_with_id",
 			"contents": "I enter \"${1:[value to enter]}\" into the field with id \"${2:[id of field]}\"" },
 
+		//When I append :value into the field with id :id
 		{ "trigger": "i_append_value_into_the_field_with_id", //This may become depricated... I imagine we can just use enter function
 			"contents": "I append \"${1:[value to enter]}\" into the field with id \"${2:[id of field]}\"" },
 
+		//When I see the admin bar
 		{ "trigger": "i_see_the_admin_bar",
 			"contents": "I see the admin bar" },
 
