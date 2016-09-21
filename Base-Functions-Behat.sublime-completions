@@ -11,6 +11,10 @@
    		{ "trigger": "when", "contents": "When " },
    		{ "trigger": "and", "contents": "And  " },
 
+   		/*
+   		* Base Functions
+   		*/
+
    		//Given:
    		//I am viewing :domain
    		{ "trigger": "i_amv_iewing", "contents": "I am viewing \"${1:[url]}\"" },
@@ -122,6 +126,55 @@
 		//When I see the admin bar
 		{ "trigger": "i_see_the_admin_bar",
 			"contents": "I see the admin bar" },
+
+
+		/*
+		* AP Site Specific
+		*/
+
+		//Then:
+		//Then I see cart contains item :arg1
+		{ "trigger": "ap_i_see_cart_contains_item",
+			"contents": "I see cart contains item \"${1:[Product Name]}\"" },
+
+		//Then I see cart total is :arg1
+		{ "trigger": "ap_i_see_cart_total_is",
+			"contents": "I see cart total is \"${1:[Product Total]}\"" },
+
+		//When:
+		//When I click the header link labeled :arg1
+		{ "trigger": "ap_i_click_the_header_link_labeled",
+			"contents": "I click the header link labeled \"${1:[Product Total]}\"" },
+
+
+		/*
+		* Sleeter Site Specific
+		*/
+
+		//Then:
+		//Then I see the password reset form
+		{ "trigger": "sltr_i_see_the_password_reset_form",
+			"contents": "I see the password rest form" },
+
+		//Then I purchase the product named :productName
+		{ "trigger": "sltr_i_purchase_the_product_named",
+			"contents": "I purchase the product named \"${1:[Product Name]}\"" },
+
+		//Then I enter product quantity :value
+		{ "trigger": "sltr_i_enter_product_quantity",
+			"contents": "I enter product quantity \"${1:[Quantity]}\"" },
+
+		//Then I click the link with :linkId
+		{ "trigger": "sltr_i_click_the_link_with",
+			"contents": "I click the link with \"${1:[ID of the link]}\"" },
+
+		//Then I see the next payment date is in :timePeriod
+		{ "trigger": "sltr_i_see_the_next_payment_date_is_in",
+			"contents": "I see the next payment date is in \"${1:[Expected Date]}\"" },
+
+		//When:
+
+
 
    ]
 }
