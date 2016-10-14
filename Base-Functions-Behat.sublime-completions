@@ -104,15 +104,21 @@
 		{ "trigger": "i_go_back",
 			"contents": "I go back" },
 
-		/* Currently not working
+		//Then I enter a random username into the field with id :id
+		{ "trigger": "i_enter_a_random_username_into_the_field_with_id",
+			"contents": "Then I enter a random username into the field with id \"${1:[ID of field]]}\"" },
+
+		//Then I reuse the random username and enter into the field with id :id
+		{ "trigger": "i_reuse_the_random_username_and_enter_into_the_field_with_id",
+			"contents": "Then I reuse the random username and enter into the field with id \"${1:[ID of field]]}\"" },
+
 		//Then I check email for :address for a message with subject :subject
 		{ "trigger": "i_check_email_for_address_for_a_message_with_subject",//ummmm does this have to be @stexy? important to know
-			"contents": "I check email for \"${1:[email address to check]}\" for  a message with subject \"${2:[subject]}\"" },
+			"contents": "I check email for \"${1:[email address it was sent to]}\" for  a message with subject \"${2:[subject]}\"" },
 		
 		//Then I click the :linkText link in an email for :address with subject :subject
 		{ "trigger": "i_click_the_link_in_an_email_for_address_with_subject",//ummmm does this have to be @stexy? important to know
-			"contents": "I click the \"${1:[text of link]}\" link in an email for \"${2:[email address to check]}\" with subject \"${3:[subject]}\"" },
-		*/
+			"contents": "I click the \"${1:[text of link]}\" link in an email for \"${2:[email address it was sent to]}\" with subject \"${3:[subject]}\"" },
 
 		//When:
 		//When I enter :value into the field with id :id
